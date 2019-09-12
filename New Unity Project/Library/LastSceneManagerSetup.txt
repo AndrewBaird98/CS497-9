@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Mega Fantasy Props Pack/Example Scenes/Beach.unity
+  isLoaded: 1
+  isActive: 1
