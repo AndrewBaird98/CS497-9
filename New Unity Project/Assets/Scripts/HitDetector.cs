@@ -16,10 +16,10 @@ public class HitDetector : MonoBehaviour
             if (HitCount > 1 && HitCount < 12)
             {
                 //modify vect to change spawn points
-                Vector3 vect = col.gameObject.transform.position + new Vector3(0f, 0f, 0f);
+                Vector3 vect = col.gameObject.transform.position + new Vector3(Random.Range(-10.0f, 10.0f), 0f, 4f);
           
                 Instantiate(prefab, vect, new Quaternion(), parent);
-                Debug.Log("New Rotating Prefab Created");
+                Debug.Log("New Rotating Prefab Created, Number: " + (HitCount-1));
             }
 
         }

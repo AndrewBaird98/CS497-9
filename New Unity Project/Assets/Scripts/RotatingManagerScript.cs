@@ -15,7 +15,8 @@ public class RotatingManagerScript : MonoBehaviour
     void Update()
     {
        if (Input.GetKeyDown("space"))
-        {     
+        {
+            Debug.Log("Space bar pressed, Going Faster Now.");
             Transform[] allChildren = GetComponentsInChildren<Transform>();
             foreach (Transform child in allChildren)
             {
