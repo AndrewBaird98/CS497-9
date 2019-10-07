@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.homework3actual.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "C:\\Users\\baird013\\Documents\\GitHub\\HW3\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "HW3 [Testing]"
+        }
+      }
+    }
+  ]
+}
