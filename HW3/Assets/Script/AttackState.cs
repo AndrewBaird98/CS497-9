@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AttackState : State<AI>
 {
@@ -39,9 +40,10 @@ public class AttackState : State<AI>
     {
         var dist = Vector3.Distance(owner.aiCharacter.transform.position, owner.player.transform.position);
 
-        if (dist < 2f)
+        if (dist < 1f)
         {
             //game over
+            SceneManager.LoadScene(1);
         }
         if (dist > 5f)
         {
